@@ -28,7 +28,7 @@ def chat_with_llm_model2(user_input):
     
     response = requests.post(
         "https://llmfoundry.straive.com/anthropic/v1/messages",
-        headers={"Authorization": f"Bearer {LLMFOUNDRY_TOKEN}:Muthu_bot"},
+        headers={"Authorization": f"Bearer {LLMFOUNDRY_TOKEN}: Nithishkumar_bot"},
         json={"model": "claude-3-haiku-20240307", "max_tokens": 1000, "messages": [{"role": "user", "content": user_input}]},
     )
     
