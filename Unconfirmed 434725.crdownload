@@ -12,7 +12,7 @@ def chat_with_llm_model1(user_input):
     
     response = requests.post(
         "https://llmfoundry.straive.com/azure/openai/deployments/gpt-35-turbo/chat/completions?api-version=2024-05-01-preview",
-        headers={"Authorization": f"Bearer {LLMFOUNDRY_TOKEN}:Muthu_bot"},
+        headers={"Authorization": f"Bearer {LLMFOUNDRY_TOKEN}:Nithishkumar_bot"},
         json={"messages": [{"role": "user", "content": user_input}]},
     )
     
@@ -28,7 +28,7 @@ def chat_with_llm_model2(user_input):
     
     response = requests.post(
         "https://llmfoundry.straive.com/anthropic/v1/messages",
-        headers={"Authorization": f"Bearer {LLMFOUNDRY_TOKEN}:Muthu_bot"},
+        headers={"Authorization": f"Bearer {LLMFOUNDRY_TOKEN}:Nithishkumar_bot"},
         json={"model": "claude-3-haiku-20240307", "max_tokens": 1000, "messages": [{"role": "user", "content": user_input}]},
     )
     
